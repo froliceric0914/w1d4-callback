@@ -9,9 +9,10 @@ function makeLoadedDie() {
   var counter = 0;
 
   return function() {
+    var number = list[counter]
     counter += 1;
-    return list[counter];
-
+    return number;
+    // counter += 1; ??? w
   }
 }
 
